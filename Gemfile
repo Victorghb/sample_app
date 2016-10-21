@@ -1,10 +1,15 @@
 source 'https://rubygems.org'
 
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
+gem 'bootstrap-sass', '3.3.7'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -32,6 +37,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pg', '>0.15.1'
 
+gem 'test-unit'
+
+gem 'sprockets', '>=3.6.3'
+
+gem 'rspec-core', '>=3.4.4'
+
 group :production do
   gem 'rails_12factor', '0.0.2'
 end
@@ -46,10 +57,10 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '>=2.13.1'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '>=2.1.0'
 end
