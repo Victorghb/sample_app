@@ -5,9 +5,9 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '>=3.3.7'
 
 gem 'bcrypt-ruby', '3.1.2'
 # Use SCSS for stylesheets
@@ -45,6 +45,8 @@ gem 'sprockets', '>=3.6.3'
 
 gem 'rspec-core', '>=3.4.4'
 
+gem 'devise'
+
 group :production do
   gem 'rails_12factor', '0.0.2'
 end
@@ -66,4 +68,6 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '>=2.1.0'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '>=1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end

@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe StaticPagesController do
 
-  describe "GET '...'" do
+  describe "GET home" do
     it "returns http success" do
-      get '...'
+      get :home
       response.should be_success
     end
   end

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-describe AboutController do
+describe StaticPagesController do
 
-  describe "GET '...'" do
+  describe "GET session" do
     it "returns http success" do
-      get '...'
+      get :home
       response.should be_success
     end
   end
